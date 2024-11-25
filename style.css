@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: bisque;
+    text-align: center;
+    color: black;
+}
+.man {
+    width: 40%;
+    border: 2px solid rgb(9, 177, 243);
+    padding: 2%;
+    border-radius: 5%;
+    margin-top: 15%;
+    margin-left: 28%;
+    margin-right: 15%;
+    background-color: rgb(9, 48, 73);
+    color: aliceblue;
+}
+input {
+    border-radius: 5%;
+    text-decoration: none;
+    text-align: center;
+    margin-top: 3%;
+    outline: none;
+    
+}
+p {
+    padding: 5%;
+    background-color: aliceblue;
+    margin-top: 5%;
+    color: black;
+}
+button {
+    background-color: rgb(249, 252, 251);
+    color: rgb(0, 2, 3);
+    padding: 3%;
+}
