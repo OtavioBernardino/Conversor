@@ -46,6 +46,7 @@ input {
     border-left: none;
     border-right: none;
     border-bottom: solid black 2px;
+    font-size: 30px;
 }
 
 p {
@@ -54,6 +55,7 @@ p {
     margin-top: 0%;
     color: rgb(255, 253, 253);
     border: solid rgb(9, 48, 73) 0px;
+    font-size: 30px;
 }
 button {
     margin-top: 50%;
@@ -64,6 +66,9 @@ button {
     border-radius:0% 4% 0% 4%;
     width: 40%;
     background-color:  #1ab694;
+    font-size: 20px;
+
+
     
 }
 button:hover {
@@ -75,6 +80,9 @@ button:hover {
     border-radius:0% 4% 0% 4%;
     width: 44%;
     background-color: #d013d6;
+    font-size: 20px;
+
+
   
 }
 
