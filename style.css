@@ -71,12 +71,14 @@ p {
     border: solid rgb(9, 48, 73) 0px;
 }
 button {
+    margin-top: 2%;
+    margin-bottom: 10%;
    
     color: rgb(252, 252, 252);
     padding: 3%;
     border: solid rgb(10, 147, 231) 0px;
     border-radius:2%;
-    width: 30%;
+    width: 40%;
     background-color:  #1ab694;
 }
 
@@ -149,4 +151,19 @@ li:hover {
 
     
 }
+.ativo:hover {
+   
+    float: left;
+    text-align: center;
+    border: solid white 1%;
+    border-radius: 0%;
+    text-decoration: none;
+    list-style-type: none;
+    background-color: #b61aa9;
+    padding: 2%;
+    color: rgb(255, 255, 255);
+
+    
+}
+
 
