@@ -4,7 +4,7 @@
 }
 
 body {
-    background-color: rgb(9, 48, 73);
+    background-image: linear-gradient(to right, #0d86d6, #1ab694);
     text-align: center;
     color: black;
   
@@ -29,7 +29,7 @@ input {
     outline: 0;
     width: 55%;
     color:rgb(247, 250, 253);
-    background-color: rgb(9, 48, 73);
+    background-color: #1ab694;
     border: solid rgb(9, 48, 73) 0px;
     
 
@@ -43,8 +43,8 @@ input:hover {
     margin-top: 0%;
     outline: 0;
     width: 55%;
-    color:rgb(0, 0, 0);
-    background-color: rgb(12, 214, 147);
+    color:rgb(255, 252, 252);
+    background-color: #1ab694;
     border: solid rgb(9, 48, 73) 0px;
   
 
@@ -53,10 +53,10 @@ input:hover {
 }
 p {
     padding: 5%;
-    background-color: rgb(9, 48, 73);
+    background-color:  #0d86d6;
     margin-top: 0%;
     color: rgb(255, 253, 253);
-    border: solid rgb(9, 48, 73) 2px;
+    border: solid rgb(9, 48, 73) 0px;
 }
 button {
    
@@ -65,16 +65,16 @@ button {
     border: solid rgb(10, 147, 231) 0px;
     border-radius:2%;
     width: 30%;
-    background-color: rgb(9, 48, 73);
+    background-color:  #1ab694;
 }
 
 button:hover {
-    background-color: rgb(12, 214, 147);
-    color: rgb(0, 2, 3);
+    background-color: #1ab694;
+    color: rgb(253, 254, 255);
     padding: 3%;
     border: solid rgb(10, 147, 231) 0px;
     border-radius:2%;
-    width: 30%;
+    width: 35%;
     
 
 }
@@ -116,7 +116,7 @@ li:hover {
     border-radius: 0%;
     text-decoration: none;
     list-style-type: none;
-    background-color: rgb(255, 26, 10);
+    background-color: #1ab694;
     padding: 2%;
     color: rgb(255, 252, 252);
     
@@ -129,8 +129,8 @@ li:hover {
     border-radius: 0%;
     text-decoration: none;
     list-style-type: none;
-    background-color: rgb(10, 255, 30);
+    background-color: #1ab694;
     padding: 2%;
-    color: rgb(3, 3, 3);
+    color: rgb(255, 255, 255);
     
 }
