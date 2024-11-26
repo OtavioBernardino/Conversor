@@ -22,29 +22,31 @@ body {
 }
 
 input {
-    border-radius: 5%;
+    border-radius: 4%;
     text-decoration: none;
     text-align: center;
     margin-top: 0%;
-    outline: none;
+    outline: 0;
     width: 55%;
     color:rgb(247, 250, 253);
     background-color: rgb(9, 48, 73);
-    border: solid rgb(9, 48, 73) 2px;
+    border: solid rgb(9, 48, 73) 0px;
+    
 
    
     
 }
 input:hover {
-    border-radius: 5%;
+    border-radius: 4%;
     text-decoration: none;
     text-align: center;
     margin-top: 0%;
-    outline: none;
+    outline: 0;
     width: 55%;
     color:rgb(0, 0, 0);
     background-color: rgb(12, 214, 147);
-    border: solid rgb(9, 48, 73) 2px;
+    border: solid rgb(9, 48, 73) 0px;
+  
 
    
     
@@ -73,6 +75,8 @@ button:hover {
     border: solid rgb(10, 147, 231) 0px;
     border-radius:2%;
     width: 30%;
+    
+
 }
 
 nav {
