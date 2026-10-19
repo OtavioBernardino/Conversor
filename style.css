@@ -1,178 +1,164 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
 :root {
-    --cor-primaria:#2714ff;
-    --cor-secundaria: #ebff14;
-
+    --cor-primaria: #1ab694;
+    --cor-primaria-hover: #148f74;
+    --cor-secundaria: #0d86d6;
+    --cor-fundo-card: rgba(255, 255, 255, 0.95);
+    --cor-texto: #2c3e50;
+    --sombra: 0 10px 25px rgba(0, 0, 0, 0.15);
 }
 
-html { min-height: 100%;}
-.principal {
-    position: fixed;
-    top: 0;
-    left: 0;
-    user-select: none;
-
-}
 body {
-    /*background-image: linear-gradient(to right, var(--cor-primaria), #1ab694);*/
-    background-image: url("https://img.freepik.com/fotos-premium/retrato-de-vaca-holandesa-em-estilo-vintage_420555-98.jpg?w=740");
-    text-align: center;
-    color: black;
-    background-repeat: no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), 
+                url("https://img.freepik.com/fotos-premium/retrato-de-vaca-holandesa-em-estilo-vintage_420555-98.jpg?w=740") no-repeat center center fixed;
     background-size: cover;
-
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
 }
-.man {
-    width: 70%;
-    border: 2px solid rgb(255, 255, 255);
-    padding: 8%;
-    border-radius: 3%;
-    margin-top: 10%;
-    margin-left: 6%;
-    background-color: rgb(250, 250, 250);
-    color: rgb(0, 0, 0);
-    height: 100%;
-    opacity: 0.9;
 
-    
+.principal {
+    width: 100%;
+    max-width: 480px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Navegação */
+nav {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    list-style: none;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 10px;
+    border-radius: 12px;
+    box-shadow: var(--sombra);
+}
+
+nav li {
+    flex: 1;
+    text-align: center;
+}
+
+nav a {
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: var(--cor-texto);
+    font-weight: 600;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+nav li.ativo a, 
+nav a:hover {
+    background-color: var(--cor-primaria);
+    color: #ffffff;
+}
+
+/* Cartão Principal */
+.man {
+    width: 100%;
+    background-color: var(--cor-fundo-card);
+    padding: 30px 25px;
+    border-radius: 20px;
+    box-shadow: var(--sombra);
+    text-align: center;
+    backdrop-filter: blur(5px);
+}
+
+.man img {
+    margin-bottom: 10px;
+}
+
+h1 {
+    color: var(--cor-texto);
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+hr {
+    border: none;
+    height: 2px;
+    background-color: #e0e0e0;
+    margin: 15px 0 20px 0;
+}
+
+h3 {
+    color: #555;
+    font-size: 1.1rem;
+    margin-bottom: 12px;
+}
+
+/* Formit / Input */
+.campo-entrada {
+    margin-bottom: 25px;
 }
 
 input {
-    text-decoration: none;
+    width: 80%;
+    padding: 10px;
     text-align: center;
-    margin-top: 0%;
     outline: none;
-    width: 55%;
-    color:rgb(2, 2, 2);
-    background-color: rgb(250, 250, 250);
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    border-bottom: solid black 2px;
-    font-size: 30px;
+    border: none;
+    border-bottom: 3px solid var(--cor-primaria);
+    background: transparent;
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--cor-texto);
+    transition: border-color 0.3s ease;
 }
 
-p {
-    padding: 5%;
-    background-color:  #0d86d6;
-    margin-top: 0%;
-    color: rgb(255, 253, 253);
-    border: solid rgb(9, 48, 73) 0px;
-    font-size: 30px;
+input:focus {
+    border-bottom-color: var(--cor-secundaria);
+}
+
+/* Resultado e Botão */
+p#result {
+    padding: 15px;
+    background-color: var(--cor-secundaria);
+    color: #ffffff;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 10px rgba(13, 134, 214, 0.3);
 }
 
 button {
-    margin-top: 50%;
-    margin-bottom: 10%;
-    color: rgb(252, 252, 252);
-    padding: 6%;
-    border: solid rgb(10, 147, 231) 0px;
-    border-radius:0% 4% 0% 4%;
-    width: 40%;
-    background-color:  #1ab694;
-    font-size: 20px;
-
-
-    
-}
-button:hover {
-    margin-top: 50%;
-    margin-bottom: 10%;
-    color: rgb(252, 252, 252);
-    padding: 6%;
-    border: solid rgb(10, 147, 231) 0px;
-    border-radius:0% 4% 0% 4%;
-    width: 44%;
-    background-color: #d013d6;
-    font-size: 20px;
-
-
-  
-}
-
-nav {
-    border: solid white 0;
-    border-radius:4%;
-    margin-left: 17%;
-    padding: 4.6%;
-    margin-top:-2%;
-    margin-bottom: 8%;
     width: 100%;
-
-
-
-
-}
-li {
-   
-    float: left;
-    text-align: center;
-    border: solid white 1%;
-    border-radius: 0%;
-    text-decoration: none;
-    list-style-type: none;
-    background-color: rgb(255, 255, 255);
-    padding: 2%;
-    width: 15%;
-    color: rgb(0, 0, 0);
-
-    
-}
-h1 {
-    margin-bottom: 1%;
-}
-li:hover {
-   
-    float: left;
-    text-align: center;
-    border: solid white 1%;
-    border-radius: 0%;
-    text-decoration: none;
-    list-style-type: none;
-    background-color: #1ab694;
-    padding: 2%;
-    color: rgb(255, 252, 252);
-    
-}
-.ativo {
-   
-    float: left;
-    text-align: center;
-    border: solid white 1%;
-    border-radius: 0%;
-    text-decoration: none;
-    list-style-type: none;
-    background-color: #1ab694;
-    padding: 2%;
-    color: rgb(255, 255, 255);
-
-    
-}
-.ativo:hover {
-   
-    float: left;
-    text-align: center;
-    border: solid white 1%;
-    border-radius: 0%;
-    text-decoration: none;
-    list-style-type: none;
-    background-color: #b61aa9;
-    padding: 2%;
-    color: rgb(255, 255, 255);
-
-    
-}
-a {
-    text-decoration: none;
-
-    
-}
-a:hover {
-    text-decoration: none;
-    color: white;
-    
+    padding: 15px;
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--cor-primaria);
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+    box-shadow: 0 4px 10px rgba(26, 182, 148, 0.3);
 }
 
+button:hover {
+    background-color: var(--cor-primaria-hover);
+    transform: translateY(-2px);
+}
+
+button:active {
+    transform: translateY(0);
+}
